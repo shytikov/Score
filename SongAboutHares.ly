@@ -10,7 +10,7 @@ upper = \relative c'' {
   \key c \major
   \time 3/4
 
-  r c' e' | 
+   r4 r4 \times 2/3 { r8 c8 e8 } | \times 2/3 { <e c>8 g8 f8 }
 }
 
 lower = \relative c {
@@ -18,7 +18,7 @@ lower = \relative c {
   \key c \major
   \time 3/4
 
-  r
+  r1
 }
 
 \score {
