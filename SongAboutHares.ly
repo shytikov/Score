@@ -10,9 +10,13 @@ upper = \relative c'' {
   \key c \major
   \time 3/4
 
-   r4 r4 \times 2/3 { r8 c8 e8 } | 
-   \times 2/3 { < e c >8 g8 fis8 } < f a, >4 ~ \times 2/3 { f8 e8 c8 } |
-   \times 2/3 { < d des, fes>8 c8 a8 } <g d f>4 \times 2/3 { r8 c,8 d,8 } |
+  r4 r4 \times 2/3 { r8 c8 e8 } | 
+  \times 2/3 { < e c >8 g8 fis8 } < f a, >4 ~ \times 2/3 { f8 e8 c8 } |
+  \times 2/3 { < d dis, fis>8 c8 a8 } < b d, f >4 \times 2/3 { r8 c,8 d8 } |
+
+  \repeat volta 2 {
+    \times 2/3 { < c e >8 g'8 fis8 } f4 ~ \times 2/3 { f8 b,8 c8 }
+  }
 }
 
 lower = \relative c {
