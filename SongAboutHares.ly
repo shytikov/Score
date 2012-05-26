@@ -15,7 +15,8 @@ upper = \relative c'' {
   \times 2/3 { < d dis, fis>8 c8 a8 } < b d, f >4 \times 2/3 { r8 c,8 d8 } |
 
   \repeat volta 2 {
-    \times 2/3 { < c e >8 g'8 fis8 } f4 ~ \times 2/3 { f8 b,8 c8 }
+    \times 2/3 { < c e >8 g'8 fis8 } f4 ~ \times 2/3 { f8 b,8 c8 } |
+    \times 2/3 { < b d >8 e8 f8 } \times 2/3 { < c f >8 e4 ~ } \times 2/3 { e8 a,8 b8 } |
   }
 }
 
