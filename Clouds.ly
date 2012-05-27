@@ -11,7 +11,7 @@ upper = \relative c'' {
   \time 4/4
   \tempo 4 = 120
 
-  r2. c,8 f8
+  r2. c,8\mf f8
 
   \repeat volta 2 {
     as4 g8 f8 e8 f8 g8 e8 |
@@ -20,13 +20,13 @@ upper = \relative c'' {
     des8 ( c8) c2 des8 c8 |
     bes4 des8 f8 bes8 aes8 g8 f8 |
     aes2. g8 f8 |
-    c4 f8 g8 aes8 g8 b8 a8 |
+    c4 f8 g8 aes8 g8 bes8 aes8 |
     g8 ( f8) f8 r8 c8 ( f8) aes8 c8 ~ |
     c1 ~ |
     c8 des4 c8 des8 c8 bes8 as8 |  
     c8 ( g 4 ) g8 ( g2 ) ~ | 
     g4. r8 c,8 e8 g8 bes8 ~ |
-    bes1 |
+    bes1 ~ |
     bes8 c4 bes8 c8 bes8 aes8 bes8 |
     des8 ( c4 ) c8 ( c2 ) |
     r4 des8 c8 des8 c8 bes8 a8 |
@@ -49,15 +49,30 @@ accompaniment = \chords {
     bes1:m |
     b1:dim |
     f2:m c2:7 |
+    f1:m |
+    f1:m |
+    f1:m |
+    c1:7 |
+    c1:7 |
+    c1:9 |
+    c1:9 |
+    f1:m |
+    f1:7 |
+    bes1:m |
+    es1:7 |
+    aes1:7 |
+    des2 g2:m |
+    f1:m|
+    c2 c2:7 |
     f1:m
 }
 
 \score {
   \new PianoStaff <<
     \set PianoStaff.instrumentName = #"Гитара"
-    \accompaniment
-    \new Staff = "upper" \upper
-    \new TabStaff = "guitar" \upper \set TabStaff.stringTunings = #guitar-tuning
+    \transpose aes g { \accompaniment }
+    \transpose aes g { \upper }
+    \new TabStaff = "guitar" \transpose aes g { \upper } \set TabStaff.stringTunings = #guitar-tuning
   >>
 
   \header { }
