@@ -12,21 +12,21 @@ melody = \relative c'' {
   \tempo 4 = 120
 
   % bar #1
-  r2. c,8\mf f8\2
+  r2. c,8\mf f8\4
 
   \repeat volta 2 {
-    as4\2 g8\2 f8\2 e8\2 f8\2 g8\2 e8\2 |
-    f2.\2 c8\3 des8\3 |
-    es4\3 es8\3 es8\3 f8\3 es8\3 des8\3 es8\3 |
+    as4\4 g8\4 f8\4 e8\4 f8\4 g8\4 e8\4 |
+    f2.\4 c8\2 des8\2 |
+    es4\2 es8\2 es8\2 f8\1 es8\2 des8\2 es8\2 |
     
     % bar #5
-    des8\3 (c8\3) c2\3 des8\3 c8\3 |
-    bes4\4 des8\3 f8\3 bes8\1 aes8\2 g8\2 f8\2 |
-    aes2.\2 g8\2 f8\2 |
-    c4\2 f8\2 g8\2 aes8\2 g8\2 bes8\1 aes8\2 |
+    des8\2 (c8\2) c2\2 des8\2 c8\2 |
+    bes4\2 des8\2 f8\1 bes8\1 aes8\1 g8\1 f8\1 |
+    aes2.\1 g8\1 f8\1 |
+    c4\2 f8\1 g8\1 aes8\1 g8\1 bes8\1 aes8\1 |
     
     % bar #9
-    g8\2 (f8\2) f8\2 r8 c8\2 (f8\2) aes8\2 c8\1 ~ |
+    g8\1 (f8\1) f8\1 r8 c8\2 (f8\1) aes8\1 c8\1 ~ |
     c1\1 ~ |
     c8\1 des4\1 c8\1 des8\1 c8\1 bes8\1 as8\2 |  
     c8\1 (g4\2) g8\2 (g2\2) ~ | 
@@ -37,14 +37,14 @@ melody = \relative c'' {
     bes8\1 c4\1 bes8\1 c8\1 bes8\1 aes8\2 bes8\1 |
     des8\1 (c4\1) c8\1 (c2\1) |
     r4 des8\1 c8\1 des8\1 c8\1 bes8\1 a8\1 |
-    c8\1 (bes8\1) f8\2 des8\3 (des2\3) ~ |
+    c8\1 (bes8\1) f8\1 des8\3 (des2\3) ~ |
     
     % bar #19
     des2\3 c'4\1 g4\2 | 
     bes4\1(\(as2.\2 ~ |
-    as8\1 )\) bes4\1 as8\2 bes8\1 as8\2 g8\2 f8\2 |
-    c'8\1 (as8\2) f8\2 c8\3 (c2\3) ~ |
-    c2\2 as'4\2 e4\2 |
+    as8\1 )\) bes4\1 as8\2 bes8\1 as8\2 g8\2 f8\1 |
+    c'8\1 (as8\2) f8\1 c8\1 (c2\1) ~ |
+    c2\4 as'4\2 e4\2 |
     f1\2
   }
 }
@@ -90,11 +90,11 @@ song = \lyrics {
 
 \score {
   \new PianoStaff <<
-    \set PianoStaff.instrumentName = #"Гитара"   
-    \transpose aes g { \accompaniment }
-    \transpose aes g { \melody }
+    \set PianoStaff.instrumentName = #"Укулеле"   
+    \transpose aes c' { \accompaniment }
+    \transpose aes c' { \melody }
     \addlyrics { \song }
-    \new TabStaff = "guitar" \transpose aes g { \melody } \set TabStaff.stringTunings = #guitar-tuning
+    \new TabStaff = "ukulele" \transpose aes c' { \melody } \set TabStaff.stringTunings = #ukulele-tuning
   >>
 
   \header { }
