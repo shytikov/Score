@@ -21,7 +21,7 @@ melody = \relative c'' {
     
     % bar #5
     des8\2 (c8\2) c2\2 des8\2 c8\2 |
-    bes4\2 des8\2 f8\1 bes8\1 aes8\1 g8\1 f8\1 |
+    bes4\3 des8\2 f8\1 bes8\1 aes8\1 g8\1 f8\1 |
     aes2.\1 g8\1 f8\1 |
     c4\2 f8\1 g8\1 aes8\1 g8\1 bes8\1 aes8\1 |
     
